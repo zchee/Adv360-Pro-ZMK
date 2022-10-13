@@ -1,0 +1,9 @@
+# zchee/Adv360-Pro-ZMK project gitattributes file
+#  https://github.com/github/linguist/blob/master/docs/overrides.md
+
+* -text
+
+docs        linguist-documentation
+
+Dockerfile*          linguist-language=Dockerfile
+config/*.keymap      linguist-language=C
