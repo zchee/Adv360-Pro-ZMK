@@ -79,11 +79,11 @@
 
         layer_SHIFT {
             bindings = <
- &kp PERCENT       &kp NUMBER_7  &kp NUMBER_5         &kp NUMBER_3        &kp NUMBER_1       &kp NUMBER_9                   &trans        &trans      &kp NUMBER_0   &kp NUMBER_2   &kp NUMBER_4       &kp NUMBER_6         &kp NUMBER_8     &kp GRAVE
- &kp LS(TAB)      &kp SEMICOLON        &kp LT     &kp GREATER_THAN           &kp LS(P)          &kp LS(Y)                   &trans        &trans         &kp LS(F)      &kp LS(G)      &kp LS(C)          &kp LS(R)            &kp LS(L)      &kp PIPE
-      &trans          &kp LS(A)     &kp LS(O)            &kp LS(E)           &kp LS(U)          &kp LS(I)                   &trans  &kp LS(LCMD)  &kp LS(LEFT_ALT)                                &kp LS(RIGHT_ALT)         &kp LS(RCMD)        &trans  &kp LS(D)  &kp LS(H)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp UNDERSCORE
-      &trans  &kp DOUBLE_QUOTES     &kp LS(Q)            &kp LS(J)           &kp LS(K)          &kp LS(X)                   &trans        &trans            &trans         &trans         &trans             &trans               &trans        &trans  &kp LS(B)  &kp LS(M)  &kp LS(W)  &kp LS(V)  &kp LS(Z)          &trans
-      &trans         &kp DOLLAR     &kp TILDE  &kp LS(RIGHT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(BACKSPACE)            &kp LS(LCTRL)        &trans       &kp LS(ESC)  &kp LS(ENTER)  &kp LS(SPACE)   &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp QUESTION  &kp CARET     &trans
+ &kp PERCENT       &kp NUMBER_7  &kp NUMBER_5        &kp NUMBER_3        &kp NUMBER_1       &kp NUMBER_9                   &trans        &trans      &kp NUMBER_0   &kp NUMBER_2   &kp NUMBER_4       &kp NUMBER_6         &kp NUMBER_8     &kp GRAVE
+ &kp LS(TAB)      &kp SEMICOLON        &kp LT    &kp GREATER_THAN           &kp LS(P)          &kp LS(Y)                   &trans        &trans         &kp LS(F)      &kp LS(G)      &kp LS(C)          &kp LS(R)            &kp LS(L)      &kp PIPE
+      &trans          &kp LS(A)     &kp LS(O)           &kp LS(E)           &kp LS(U)          &kp LS(I)                   &trans  &kp LS(LCMD)  &kp LS(LEFT_ALT)                                &kp LS(RIGHT_ALT)         &kp LS(RCMD)        &trans  &kp LS(D)  &kp LS(H)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp UNDERSCORE
+      &trans  &kp DOUBLE_QUOTES     &kp LS(Q)           &kp LS(J)           &kp LS(K)          &kp LS(X)                   &trans        &trans            &trans         &trans         &trans             &trans               &trans        &trans  &kp LS(B)  &kp LS(M)  &kp LS(W)  &kp LS(V)  &kp LS(Z)          &trans
+      &trans         &kp DOLLAR     &kp TILDE  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(BACKSPACE)            &kp LS(LCTRL)        &trans       &kp LS(ESC)  &kp LS(ENTER)  &kp LS(SPACE)   &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp QUESTION  &kp CARET     &trans
             >;
         };
 
