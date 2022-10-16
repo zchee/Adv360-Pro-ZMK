@@ -1,4 +1,4 @@
-FROM zmkfirmware/zmk-build-arm:stable
+FROM zmkfirmware/zmk-build-arm:3.0
 
 RUN mkdir -p /app/firmware
 
