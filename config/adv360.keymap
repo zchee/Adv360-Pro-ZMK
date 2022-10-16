@@ -39,11 +39,11 @@
 
         default_layer {
             bindings = <
- &kp AMPERSAND  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL               &tog 1     &mo 3   &kp ASTRK  &kp RIGHT_PARENTHESIS   &kp PLUS  &kp RIGHT_BRACKET    &kp EXCLAMATION   &kp HASH
-       &kp TAB         &kp COLON       &kp COMMA          &kp DOT                 &kp P      &kp Y                &none     &none       &kp F                  &kp G      &kp C              &kp R              &kp L   &kp BSLH
-     &kp LCTRL             &kp A           &kp O            &kp E                 &kp U      &kp I                &none  &kp LCMD    &kp LALT                                        &kp RIGHT_ALT  &kp RIGHT_COMMAND      &none   &kp D   &kp H   &kp T   &kp N   &kp S  &kp MINUS
-         &mo 4  &kp SINGLE_QUOTE           &kp Q            &kp J                 &kp K      &kp X                &none     &none     &kp F14                  &none      &none            &kp F14              &none      &none   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHFT
-         &mo 2        &kp DOLLAR       &kp TILDE         &kp LEFT        &kp DOWN_ARROW   &kp BSPC            &kp LCTRL   &kp F13  &kp ESCAPE              &kp ENTER  &kp SPACE       &kp UP_ARROW          &kp RIGHT  &kp SLASH  &kp AT   &mo 2
+    &kp AMPERSAND  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS      &kp EQUAL                      &tog 1             &mo 3     &kp ASTRK  &kp RIGHT_PARENTHESIS   &kp PLUS  &kp RIGHT_BRACKET    &kp EXCLAMATION   &kp HASH
+          &kp TAB         &kp COLON       &kp COMMA          &kp DOT                 &kp P          &kp Y                       &none             &none         &kp F                  &kp G      &kp C              &kp R              &kp L   &kp BSLH
+ &kp LEFT_CONTROL             &kp A           &kp O            &kp E                 &kp U          &kp I                       &none  &kp LEFT_COMMAND  &kp LEFT_ALT                                        &kp RIGHT_ALT  &kp RIGHT_COMMAND      &none   &kp D   &kp H   &kp T   &kp N   &kp S  &kp MINUS
+            &mo 4  &kp SINGLE_QUOTE           &kp Q            &kp J                 &kp K          &kp X                       &none             &none       &kp F14                  &none      &none            &kp F14              &none      &none   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHFT
+            &mo 2        &kp DOLLAR       &kp TILDE   &kp LEFT_ARROW        &kp DOWN_ARROW  &kp BACKSPACE            &kp LEFT_CONTROL           &kp F13    &kp ESCAPE              &kp ENTER  &kp SPACE       &kp UP_ARROW    &kp RIGHT_ARROW  &kp SLASH  &kp AT   &mo 2
             >;
         };
 
@@ -79,11 +79,11 @@
 
         layer_SHIFT {
             bindings = <
- &kp PERCENT       &kp NUMBER_7  &kp NUMBER_5        &kp NUMBER_3        &kp NUMBER_1       &kp NUMBER_9                   &trans        &trans      &kp NUMBER_0   &kp NUMBER_2   &kp NUMBER_4       &kp NUMBER_6         &kp NUMBER_8     &kp GRAVE
- &kp LS(TAB)      &kp SEMICOLON        &kp LT    &kp GREATER_THAN           &kp LS(P)          &kp LS(Y)                   &trans        &trans         &kp LS(F)      &kp LS(G)      &kp LS(C)          &kp LS(R)            &kp LS(L)      &kp PIPE
-      &trans          &kp LS(A)     &kp LS(O)           &kp LS(E)           &kp LS(U)          &kp LS(I)                   &trans  &kp LS(LCMD)  &kp LS(LEFT_ALT)                                &kp LS(RIGHT_ALT)         &kp LS(RCMD)        &trans  &kp LS(D)  &kp LS(H)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp UNDERSCORE
-      &trans  &kp DOUBLE_QUOTES     &kp LS(Q)           &kp LS(J)           &kp LS(K)          &kp LS(X)                   &trans        &trans            &trans         &trans         &trans             &trans               &trans        &trans  &kp LS(B)  &kp LS(M)  &kp LS(W)  &kp LS(V)  &kp LS(Z)          &trans
-      &trans         &kp DOLLAR     &kp TILDE  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(BACKSPACE)            &kp LS(LCTRL)        &trans       &kp LS(ESC)  &kp LS(ENTER)  &kp LS(SPACE)   &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)  &kp QUESTION  &kp CARET     &trans
+          &kp PERCENT       &kp NUMBER_7   &kp NUMBER_5        &kp NUMBER_3        &kp NUMBER_1       &kp NUMBER_9                          &trans                &trans      &kp NUMBER_0   &kp NUMBER_2   &kp NUMBER_4       &kp NUMBER_6           &kp NUMBER_8     &kp GRAVE
+          &kp LS(TAB)      &kp SEMICOLON  &kp LESS_THAN    &kp GREATER_THAN           &kp LS(P)          &kp LS(Y)                          &trans                &trans         &kp LS(F)      &kp LS(G)      &kp LS(C)          &kp LS(R)              &kp LS(L)      &kp PIPE
+ &kp LS(LEFT_CONTROL)          &kp LS(A)      &kp LS(O)           &kp LS(E)           &kp LS(U)          &kp LS(I)                          &trans  &kp LS(LEFT_COMMAND)  &kp LS(LEFT_ALT)                                &kp LS(RIGHT_ALT)  &kp LS(RIGHT_COMMAND)        &trans  &kp LS(D)  &kp LS(H)  &kp LS(T)  &kp LS(N)  &kp LS(S)  &kp UNDERSCORE
+               &trans  &kp DOUBLE_QUOTES      &kp LS(Q)           &kp LS(J)           &kp LS(K)          &kp LS(X)                          &trans                &trans            &trans         &trans         &trans             &trans                 &trans        &trans  &kp LS(B)  &kp LS(M)  &kp LS(W)  &kp LS(V)  &kp LS(Z)          &trans
+               &trans         &kp DOLLAR      &kp TILDE  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(BACKSPACE)            &kp LS(LEFT_CONTROL)                &trans       &kp LS(ESC)  &kp LS(ENTER)  &kp LS(SPACE)   &kp LS(UP_ARROW)    &kp LS(RIGHT_ARROW)  &kp QUESTION  &kp CARET     &trans
             >;
         };
 
