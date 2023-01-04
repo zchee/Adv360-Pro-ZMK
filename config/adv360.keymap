@@ -32,7 +32,7 @@
   &kp AMPERSAND  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS      &kp EQUAL                       &none             &mo 3     &kp ASTRK  &kp RIGHT_PARENTHESIS   &kp PLUS  &kp RIGHT_BRACKET    &kp EXCLAMATION   &kp HASH
         &kp TAB         &kp COLON       &kp COMMA          &kp DOT                 &kp P          &kp Y                       &none             &none         &kp F                  &kp G      &kp C              &kp R              &kp L   &kp BSLH
 &kp LEFT_CONTROL            &kp A           &kp O            &kp E                 &kp U          &kp I                       &none  &kp LEFT_COMMAND  &kp LEFT_ALT                                        &kp RIGHT_ALT  &kp RIGHT_COMMAND      &none   &kp D   &kp H   &kp T   &kp N   &kp S  &kp MINUS
-          &mo 4  &kp SINGLE_QUOTE           &kp Q            &kp J                 &kp K          &kp X                       &none             &none       &kp F14                  &none      &none            &kp F14              &none      &none   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHFT
+          &mo 4  &kp SINGLE_QUOTE           &kp Q            &kp J                 &kp K          &kp X                       &none             &none       &kp F15                  &none      &none            &kp F15              &none      &none   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHFT
  &kp LEFT_SHIFT        &kp DOLLAR       &kp TILDE   &kp LEFT_ARROW        &kp DOWN_ARROW  &kp BACKSPACE            &kp LEFT_CONTROL           &kp F13    &kp ESCAPE              &kp ENTER  &kp SPACE       &kp UP_ARROW    &kp RIGHT_ARROW  &kp SLASH  &kp AT   &mo 2
       >;
     };
