@@ -24,20 +24,20 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                                       &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
-      >;
-    };
+        &kp AMPERSAND &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_PARENTHESIS &kp EQUAL    &none                                                                                             &mo 3  &kp ASTRK    &kp RIGHT_PARENTHESIS &kp PLUS      &kp RIGHT_BRACKET &kp EXCLAMATION &kp HASH
+        &kp TAB       &kp COLON         &kp COMMA       &kp DOT             &kp P                &kp Y        &none                                                                                             &none  &kp F        &kp G                 &kp C         &kp R             &kp L           &kp BSLH
+        &kp LCTRL     &kp A             &kp O           &kp E               &kp U                &kp I        &none               &kp LCMD      &kp LALT      &none &none   &kp RALT     &kp RCMD               &none  &kp D        &kp H                 &kp T         &kp N             &kp S           &kp MINUS
+        &mo 4         &kp SINGLE_QUOTE  &kp Q           &kp J               &kp K                &kp X               &none        &none         &kp F15       &none &none   &kp F15      &none        &none            &kp B        &kp M                 &kp W         &kp V             &kp Z           &mo 4
+        &kp LSHIFT    &kp DOLLAR        &kp TILDE       &kp LEFT            &kp DOWN                                 &kp BSPC     &kp LCTRL     &kp F13                     &kp ESCAPE   &kp ENTER    &kp SPACE                     &kp UP                &kp RIGHT     &kp SLASH         &kp AT          &kp RSHIFT
+      >;                                                                                                                                                                                                                                                                
+    };                                                                                                                                                                                                                                                                  
     keypad {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                                        &none &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &none           &kp LCTRL &kp LALT &none &none &kp LGUI  &kp RCTRL           &none &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END              &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+        &kp EQUAL     &kp N1            &kp N2          &kp N3              &kp N4               &kp N5       &trans                                                                                            &mo 3 &kp N6    &kp KP_NUM            &kp KP_EQUAL &kp KP_DIVIDE     &kp KP_MULTIPLY &kp MINUS
+        &kp TAB       &kp Q             &kp W           &kp E               &kp R                &kp T        &none                                                                                             &none &kp Y     &kp KP_N7             &kp KP_N8    &kp KP_N9         &kp KP_MINUS    &kp BSLH
+        &kp ESC       &kp A             &kp S           &kp D               &kp F                &kp G        &none               &kp LCTRL     &kp LALT      &none &none   &kp LGUI     &kp RCTRL              &none &kp H     &kp KP_N4             &kp KP_N5    &kp KP_N6         &kp KP_PLUS     &kp SQT
+        &kp LSHFT     &kp Z             &kp X           &kp C               &kp V                &kp B               &none        &none         &kp HOME      &none &none   &kp PG_UP    &none        &none           &kp N     &kp KP_N1             &kp KP_N2    &kp KP_N3         &kp KP_ENTER    &kp RSHFT
+        &mo 2         &kp GRAVE         &kp CAPS        &kp LEFT            &kp RIGHT                                &kp BSPC     &kp DEL       &kp END                     &kp PG_DN    &kp ENTER    &kp KP_N0                 &kp UP                &kp DOWN     &kp KP_DOT        &kp RBKT        &mo 2
       >;
     };
     fn {
@@ -58,5 +58,16 @@
         &none &none        &none        &bl BL_INC   &bl BL_DEC                                       &rgb_ug RGB_TOG &bl BL_TOG &none                  &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none        &none        &none
       >;
     };
+    shift {                                                                                                                                                                                                                                                             
+      bindings = <                                                                                                                                                                                                                                                      
+        &kp PERCENT   &kp NUMBER_7      &kp NUMBER_5    &kp NUMBER_3        &kp NUMBER_1         &kp NUMBER_9 &trans                                                                                            &trans &kp NUMBER_0 &kp NUMBER_2          &kp NUMBER_4  &kp NUMBER_6      &kp NUMBER_8    &kp GRAVE
+        &kp LS(TAB)   &kp SEMICOLON     &kp LESS_THAN   &kp GREATER_THAN    &kp LS(P)            &kp LS(Y)    &trans                                                                                            &trans &kp LS(F)    &kp LS(G)             &kp LS(C)     &kp LS(R)         &kp LS(L)       &kp PIPE
+        &kp LS(LCTRL) &kp LS(A)         &kp LS(O)       &kp LS(E)           &kp LS(U)            &kp LS(I)    &trans              &kp LS(LCMD)  &kp LS(LALT) &none &none   &kp LS(RALT) &kp LS(RCMD)            &trans &kp LS(D)    &kp LS(H)             &kp LS(T)     &kp LS(N)         &kp LS(S)       &kp UNDERSCORE
+        &trans        &kp DOUBLE_QUOTES &kp LS(Q)       &kp LS(J)           &kp LS(K)            &kp LS(X)           &trans       &trans        &trans       &none &none   &trans       &trans        &trans           &kp LS(B)    &kp LS(M)             &kp LS(W)     &kp LS(V)         &kp LS(Z)       &trans
+        &trans        &kp DOLLAR        &kp TILDE       &kp LS(LEFT)        &kp LS(DOWN)                             &kp LS(BSPC) &kp LS(LCTRL) &trans                     &kp LS(ESC)  &kp LS(ENTER) &kp LS(SPACE)                 &kp LS(UP)            &kp LS(RIGHT) &kp QUESTION      &kp CARET       &trans
+      >;
+    };
   };
 };
+
+// vim:ft=devicetree

@@ -1,4 +1,4 @@
-DOCKER := $(shell { command -v podman || command -v docker; })
+DOCKER := $(shell { command -v docker || command -v podman; })
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 detected_OS := $(shell uname)  # Classify UNIX OS
 ifeq ($(strip $(detected_OS)),Darwin) #We only care if it's OS X
