@@ -1,8 +1,10 @@
+# syntax=docker/dockerfile-upstream:1-labs
+
 FROM docker.io/zmkfirmware/zmk-build-arm:stable
 
 WORKDIR /app
 
-COPY config/west.yml config/west.yml
+COPY --link config/west.yml config/west.yml
 
 # West Init
 RUN west init -l config
@@ -11,6 +13,6 @@ RUN west update
 # West Zephyr export
 RUN west zephyr-export
 
-COPY bin/build.sh ./
+COPY --link bin/build.sh ./
 
 CMD ["./build.sh"]

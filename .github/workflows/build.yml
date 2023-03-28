@@ -1,16 +1,19 @@
-on: [push, pull_request, workflow_dispatch]
+on: 
+  push:
+  pull_request: 
+  workflow_dispatch:
 
 name: Build
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     container:
       image: zmkfirmware/zmk-build-arm:stable
     name: Build
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Get version data
         id: get_info
         run: |
@@ -56,6 +59,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: firmware
+          if-no-files-found: error
+          retention-days: 1
           path: |
             ${{ steps.get_info.outputs.file_prefix }}-left.uf2
             ${{ steps.get_info.outputs.file_prefix }}-right.uf2

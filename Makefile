@@ -1,4 +1,4 @@
-DOCKER := $(shell { command -v podman || command -v docker; })
+DOCKER := $(shell { command -v docker || command -v podman; })
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
 detected_OS := $(shell uname)  # Classify UNIX OS
