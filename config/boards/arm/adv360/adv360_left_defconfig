@@ -59,3 +59,13 @@ CONFIG_USB_DEVICE_MANUFACTURER="Kinesis Corporation"
 CONFIG_BT_DIS_MANUF="Kinesis Corporation"
 
 CONFIG_BUILD_OUTPUT_UF2=y
+
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=30
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=30
+
+# https://github.com/wilser/EW-Nauticus-Adv360/blob/2c9834e14059/config/boards/arm/adv360/adv360_left_defconfig#L71-L75
+# EW test 'idle' setting for hacking the small LED status lights timeout
+# ms before keyboard enters idle (first-tier sleep) which should turn off lights, but keep BT enabled and keyboard active
+# https://zmk.dev/docs/config/power
+# trying 10 minutes
+CONFIG_ZMK_IDLE_TIMEOUT=600000
