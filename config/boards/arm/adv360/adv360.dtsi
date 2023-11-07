@@ -153,6 +153,18 @@
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
+        /* https://docs.zephyrproject.org/apidoc/latest/dt-bindings_2led_2led_8h.html */
+        /*
+          LED_COLOR_ID_WHITE
+          LED_COLOR_ID_RED
+          LED_COLOR_ID_GREEN
+          LED_COLOR_ID_BLUE
+          LED_COLOR_ID_AMBER
+          LED_COLOR_ID_VIOLET
+          LED_COLOR_ID_YELLOW
+          LED_COLOR_ID_IR
+          LED_COLOR_ID_MAX
+        */
         color-mapping = <LED_COLOR_ID_GREEN
                    LED_COLOR_ID_BLUE
                    LED_COLOR_ID_RED>;
