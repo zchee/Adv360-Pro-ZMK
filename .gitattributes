@@ -1,0 +1,9 @@
+# https://github.com/github/linguist/blob/master/docs/overrides.md
+
+* -text
+
+config/**/*.dts      linguist-language=devicetree
+config/**/*.dtsi     linguist-language=devicetree
+config/**/*.keymap   linguist-language=devicetree
+config/**/*defconfig linguist-language=c
+config/**/Kconfig*   linguist-language=c

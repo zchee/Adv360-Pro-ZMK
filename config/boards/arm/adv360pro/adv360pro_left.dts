@@ -1,11 +1,11 @@
 /*
 *
-* Copyright (c) 2021 Polarity Works
+* Copyright (c) 2023 The ZMK Contributors
 * SPDX-License-Identifier: MIT
 *
 */
 
-#include "adv360.dtsi"
+#include "adv360pro.dtsi"
 
 /{
     kscan0: kscan {

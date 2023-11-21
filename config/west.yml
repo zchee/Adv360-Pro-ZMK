@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: refil
       url-base: https://github.com/refil
+    - name: zchee
+      url-base: https://github.com/zchee
   projects:
     - name: zmk
       remote: refil

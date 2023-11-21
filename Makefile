@@ -1,14 +1,6 @@
 DOCKER := $(shell { command -v docker || command -v podman; })
 TIMESTAMP := $(shell date -u +"%Y%m%d%H%M")
 COMMIT := $(shell git rev-parse --short HEAD 2>/dev/null)
-detected_OS := $(shell uname)  # Classify UNIX OS
-ifeq ($(strip $(detected_OS)),Darwin) #We only care if it's OS X
-	SELINUX1 :=
-	SELINUX2 :=
-else
-	SELINUX1 := :z
-	SELINUX2 := ,z
-endif
 
 CONTAINER_IMAGE = zmk:latest
 DOCKER_FLAGS = --rm --pull -f Dockerfile -t ${CONTAINER_IMAGE}
@@ -27,8 +19,8 @@ build:
 
 compile:
 	$(DOCKER) container run --rm -it --name zmk \
-		--mount type=bind,src=$(PWD)/firmware,dst=/app/firmware$(SELINUX1) \
-		--mount type=bind,src=$(PWD)/config,dst=/app/config:ro$(SELINUX2) \
+		--mount type=bind,src=$(PWD)/firmware,target=/app/firmware \
+		--mount type=bind,src=$(PWD)/config,target=/app/config,readonly \
 		--env TIMESTAMP=$(TIMESTAMP) \
 		--env COMMIT=$(COMMIT) \
 		${CONTAINER_IMAGE}
