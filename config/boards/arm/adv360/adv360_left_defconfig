@@ -61,14 +61,14 @@ CONFIG_BT_BAS=n #Set this to y to enable BLE battery reporting
 CONFIG_USB_DEVICE_VID=0x29EA
 CONFIG_USB_DEVICE_PID=0x0362
 CONFIG_USB_DEVICE_MANUFACTURER="Kinesis Corporation"
-CONFIG_ZMK_HID_REPORT_TYPE_NKRO=n
-CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=n  # Set this to y for F13-F24 and intl keys with NKRO
+CONFIG_ZMK_HID_REPORT_TYPE_NKRO=y
+CONFIG_ZMK_HID_KEYBOARD_EXTENDED_REPORT=y  # Set this to y for F13-F24 and intl keys with NKRO
 CONFIG_ZMK_HID_CONSUMER_REPORT_USAGES_BASIC=y
 CONFIG_BUILD_OUTPUT_UF2=y
 
 # avoid debouncing: https://zmk.dev/docs/features/debouncing
-CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=0
-CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=5
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=12
 
 # https://github.com/wilser/EW-Nauticus-Adv360/blob/2c9834e14059/config/boards/arm/adv360/adv360_left_defconfig#L71-L75
 # EW test 'idle' setting for hacking the small LED status lights timeout
