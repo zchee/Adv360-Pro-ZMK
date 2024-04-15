@@ -4,6 +4,8 @@ Here's all notable changes and commits to both the configuration repo and the ba
 Many thanks to all those who have submitted issues and pull requests to make this firmware better!
 ## Config repo
 
+4/5/2024 - Update base ZMK, remove deprecated attributes, change flashing cmake [#424](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/424)
+
 14/3/2024 - Fix Makefile errors that prevent builds on macOS [#409](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/409)
 
 18/2/2024 - Fix version.dtsi reset after build when running local builds [#385](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/pull/385)
@@ -107,9 +109,19 @@ There have beeen 5 branches of ZMK used for the 360 Pro so far. Beta branches ar
 | [adv360-beta](https://github.com/ReFil/zmk/tree/adv360-beta)   | 3/1/2022 | 9/17/2022 | V1.0 (since deleted) |
 | [adv360-z3](https://github.com/ReFil/zmk/tree/adv360-z3) | 9/17/2022 | 7/6/2023 | V2.0 (since deleted) |
 | [adv360-z3.2](https://github.com/ReFil/zmk/tree/adv360-z3.2) | 7/6/2023 | 20/10/2023 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 82494e7) |
-| [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | 1/14/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit XXXXXXX) |
-| [adv360-z3.2-3](https://github.com/ReFil/zmk/tree/adv360-z3.2-3) | 1/14/2024 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (current) |
+| [adv360-z3.2-2](https://github.com/ReFil/zmk/tree/adv360-z3.2-2) | 20/10/2023 | 1/14/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit 4a5003a) |
+| [adv360-z3.2-3](https://github.com/ReFil/zmk/tree/adv360-z3.2-3) | 1/14/2024 | 4/5/2024 | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Up to commit XXXXXXX) |
+| [adv360-z3.5](https://github.com/ReFil/zmk/tree/adv360-z3.5) | 4/5/2024 | To date | [V3.0](https://github.com/KinesisCorporation/Adv360-Pro-ZMK/tree/V3.0) (Current) |
 
+### adv360-z3.5
+
+4/8/2024 - Refactor CI to target 360 Pro exclusively
+
+4/8/2024 - Fix CI failures
+
+3/27/2024 - Update ZMK event to new format
+
+3/27/2024 - Rebase off latest upstream ZMK (Commit 94c3b9a)
 
 ### adv360-z3.2-3
 
