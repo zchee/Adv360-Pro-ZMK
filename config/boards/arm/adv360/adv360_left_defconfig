@@ -76,3 +76,14 @@ CONFIG_ZMK_HID_INDICATORS=y
 CONFIG_ZMK_BEHAVIOR_LOCAL_ID_TYPE_CRC16=y
 
 CONFIG_ZMK_POINTING=y
+
+# avoid debouncing: https://zmk.dev/docs/features/debouncing
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
+
+# https://github.com/wilser/EW-Nauticus-Adv360/blob/2c9834e14059/config/boards/arm/adv360/adv360_left_defconfig#L71-L75
+# EW test 'idle' setting for hacking the small LED status lights timeout
+# ms before keyboard enters idle (first-tier sleep) which should turn off lights, but keep BT enabled and keyboard active
+# https://zmk.dev/docs/config/power
+# trying 10 minutes
+# CONFIG_ZMK_IDLE_TIMEOUT=600000

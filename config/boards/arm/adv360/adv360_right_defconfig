@@ -59,3 +59,12 @@ CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y
 
 CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y
+
+# avoid debouncing: https://zmk.dev/docs/features/debouncing
+CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=3
+CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
+
+# CONFIG_ZMK_RGB_UNDERGLOW_MOD_COLOR=0xFFFFFF
+
+# EW test 'idle' setting for hacking the small LED status lights timeout - see notes in LEFT file
+# CONFIG_ZMK_IDLE_TIMEOUT=600000
